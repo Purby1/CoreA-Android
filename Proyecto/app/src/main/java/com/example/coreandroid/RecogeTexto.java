@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 public class RecogeTexto extends AppCompatActivity {
 
-    private TextView texto_recogido;
+    private TextView nombre;
+    private TextView apellidos;
+    private TextView numero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +18,14 @@ public class RecogeTexto extends AppCompatActivity {
         setContentView(R.layout.activity_recoge_texto);
 
 
-        texto_recogido = findViewById(R.id.texto_Recogido);
+        nombre = findViewById(R.id.nombre_Recogido);
+        apellidos = findViewById(R.id.apellidos_Recogido);
+        numero = findViewById(R.id.numero_Recogido);
 
         Intent intent = getIntent();
-        texto_recogido.setText(intent.getStringExtra("texto_introducido"));
+        Usuario usuarioRecogido = (Usuario) intent.getSerializableExtra("usuario_introducido");
+        nombre.setText(usuarioRecogido.getNombre());
+        apellidos.setText(usuarioRecogido.getApellidos());
+        numero.setText(String.valueOf(usuarioRecogido.getNumero()));
     }
 }

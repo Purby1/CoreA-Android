@@ -9,26 +9,53 @@
     android:background="@color/turquesa_claro">
 
     <TextView
-        android:id="@+id/texto_TuTexto"
+        android:id="@+id/texto_TusDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="150sp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp"
+        android:justificationMode="inter_word"
+        android:paddingHorizontal="30dp"
+        android:text="@string/tus_datos"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/tu_texto"
-        android:textColor="@color/verde_muyoscuro"
-        android:textSize="30sp" />
+        tools:targetApi="o" />
 
     <TextView
-        android:id="@+id/texto_Recogido"
+        android:id="@+id/nombre_Recogido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="150sp"
+        android:layout_marginTop="110dp"
+        android:layout_marginHorizontal="20dp"
         android:fontFamily="serif-monospace"
         android:text="@string/error"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/verde_muyoscuro"
-        android:textSize="70sp" />
+        android:textSize="35sp" />
 
+    <TextView
+        android:id="@+id/apellidos_Recogido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/error"
+        android:textColor="@color/verde_muyoscuro"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/numero_Recogido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/error"
+        android:textColor="@color/verde_muyoscuro"
+        android:textSize="35sp" />
 </LinearLayout>
