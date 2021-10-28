@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">CoreAndroid</string>
     <string name="bienvenida">¡Bienvenid@ a la aplicación! </string>
-    <string name="crear_cuenta">Empieza por crear tu nueva cuenta.</string>
+    <string name="crear_cuenta">Empieza por crear tu nueva cuenta</string>
     <string name="tus_datos">Estos son los datos de tu cuenta</string>
     <string name="intro_texto">Escribe aquí lo que quieras</string>
+    <string name="ultimo_usuario">Último usuario registrado</string>
     <string name="error">Algo salió mal ^_^"</string>
 </resources>

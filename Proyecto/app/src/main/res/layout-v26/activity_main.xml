@@ -10,7 +10,7 @@
         android:id="@+id/texto_NuevoUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:justificationMode="inter_word"
         android:paddingHorizontal="35dp"
@@ -22,12 +22,12 @@
         android:id="@+id/texto_Crear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_below="@+id/texto_NuevoUsuario"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
         android:paddingHorizontal="20dp"
         android:text="@string/crear_cuenta"
         android:textColor="@color/black"
-        android:fontFamily="sans-serif-black"
         android:textSize="22sp" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/texto_Crear"
         android:text="Nombre"
         android:textColor="@color/black"
@@ -69,12 +69,64 @@
         android:fontFamily="sans-serif-medium"
         tools:ignore="HardcodedText" />
 
+    <TextView
+        android:id="@+id/texto_Ultimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton_CambioActividad"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/ultimo_usuario"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ultimo_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texto_Ultimo"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ultimo_Apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texto_Ultimo"
+        android:layout_toEndOf="@id/ultimo_Nombre"
+        android:text="Apellidos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ultimo_Numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ultimo_Apellidos"
+        android:text="Teléfono"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/boton_CambioActividad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editable_Numero"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="50dp"
         android:backgroundTint="@color/azul_turquesa"
         android:text="Siguiente"
@@ -88,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/texto_Crear"
         android:layout_toEndOf="@+id/texto_Nombre"
         android:hint="@string/intro_texto"
